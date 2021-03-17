@@ -2,7 +2,7 @@
 
 Tekstiä voidaan **lihavoida** taikka *kursivoida*. Kokeillaan seuraavaksi alaotsikkoa!
 
-Tuodaan tähän alle tehtävät.
+Tuodaan tähän alle tehtävät. *Lisää githubia: kirjoitan tätä tekstiä paikallisella koneella.*
 
 ## Tehtävät
 ### Viikko 1
