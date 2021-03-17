@@ -1,0 +1,114 @@
+jarvsini@lx9-fuxi200:~/ot_viikko1$ git log --stat | cat
+commit 262f9bcbda978a092314b2ba06c24874b9f6cf00
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 17:50:38 2021 +0200
+
+    poistettu file1 ja nimetty file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cbe005af373dbf7f805f53563e32b1141697278b
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 17:35:39 2021 +0200
+
+    uusia tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5d2176e77fbb288305dabc1d6d41067ee450430a
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:38:43 2021 +0200
+
+    tiedostoja moukattu
+
+ eka.txt    | 74 +-------------------------------------------------------------
+ kolmas.txt |  2 ++
+ 2 files changed, 3 insertions(+), 73 deletions(-)
+
+commit a70a3c184db3e839875109429c4e5a49b1e14061
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:28:27 2021 +0200
+
+    tiedosto uudelleen nimetty eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2d32fdfb5bfbd55919a50657f2a67b4ed42b5e71
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:26:13 2021 +0200
+
+    tiedosto toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit ff04214c6d115b264390b5465fc980b7610b7914
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:18:52 2021 +0200
+
+    tiedostoa tiedosto.txt muokattu lisää
+
+ tiedosto.txt | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
+commit a38ce717d0b91c3f3d280dfe5975d42f4a7969e3
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:16:45 2021 +0200
+
+    tiedostoa tiedosto.txt muokattu
+
+ tiedosto.txt | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+
+commit c45901e6cc970cb8ad1b99f9e8be971a933346d7
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:09:37 2021 +0200
+
+    hakemisto stuff ja uusi tiedosto lisätty
+
+ stuff/stufftiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 03bd8351433aeeb2d7ccb16fabc35240b8901ab8
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:04:57 2021 +0200
+
+    tiedostoja kolmas.txt ja toinen.txt muokattu
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 673cef373c006d96f377ea87aaae29655ed89bee
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 16:01:32 2021 +0200
+
+    tiedosto kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 44b4090d74a5f28f35eb63b00ad1848536201c2f
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 15:57:31 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 7b47fb9fcd699a63771ee8774f56318bf3e4096b
+Author: Sini Järveläinen <sini.jarvelainen@helsinki.fi>
+Date:   Wed Mar 17 15:50:19 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
