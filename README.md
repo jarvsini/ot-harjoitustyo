@@ -3,6 +3,7 @@
 Tekstiä voidaan **lihavoida** taikka *kursivoida*. Kokeillaan seuraavaksi alaotsikkoa!
 
 Tuodaan tähän alle tehtävät. *Lisää githubia: kirjoitan tätä tekstiä paikallisella koneella.*
+Paikallisen ja etärepon epäsynkrooni: kokeillaan!
 
 ## Tehtävät
 ### Viikko 1
