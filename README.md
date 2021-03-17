@@ -1,7 +1,9 @@
-# Otsikko
+# Ohjelmistotekniikka, harjoitustyö
 
 Tekstiä voidaan **lihavoida** taikka *kursivoida*. Kokeillaan seuraavaksi alaotsikkoa!
 
-## Otsikko kaksi
+## Tehtävät
+### Viikko 1
 
-Siistiä teksitä syntyy.
+[gitlog.txt](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
