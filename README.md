@@ -11,3 +11,7 @@ Paikallisen ja etärepon epäsynkrooni: kokeillaan!
 [gitlog.txt](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 [komentorivi.txt](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+
+### Viikko 2
+
+[testikattavuus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.png)
