@@ -144,10 +144,10 @@ public class KassapaateTest {
     public void korttiaLadattaessaKassaKasvaaOikein() {
         int rahaa = kassa.kassassaRahaa();
         Maksukortti kortti = new Maksukortti(100);
+        kassa.lataaRahaaKortille(kortti, -2);
         kassa.lataaRahaaKortille(kortti, 200);
         assertEquals(rahaa+200, kassa.kassassaRahaa());
-        
     }
-    
+
 
 }
