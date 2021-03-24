@@ -53,9 +53,7 @@ public class MaksukorttiTest {
     
     @Test
     public void tulostaaSaldonOikein() {
-        int euro = 10;
-        int sentti = 00;
-        assertEquals("saldo: "+euro+"."+sentti, kortti.toString());
+        assertEquals("saldo: 10.00", kortti.toString());
     }
 
 }
