@@ -50,8 +50,10 @@ public class MaksukorttiTest {
     public void rahanOttoToimiiJosRahatEiRiita() {
         assertFalse(kortti.otaRahaa(13));
     }
-    // rahan ottaminen toimii
-//saldo vähenee oikein, jos rahaa on tarpeeksi
-//saldo ei muutu, jos rahaa ei ole tarpeeksi
-//metodi palauttaa true, jos rahat riittivät ja muuten false
+    
+    @Test
+    public void tulostaaSaldonOikein() {
+        assertEquals("saldo: 10.00", kortti.toString());
+    }
+
 }
