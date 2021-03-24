@@ -17,7 +17,7 @@ public class KassapaateTest {
     //luodun kassapäätteen rahamäärä ja myytyjen lounaiden määrä on oikea (rahaa 1000, lounaita myyty 0)
     @Test
     public void luodunKassanRahaOikein() {
-        assertEquals(1000, kassa.kassassaRahaa());
+        assertEquals(Double.toString(1000), Double.toString(kassa.kassassaRahaa()));
     }
     
     @Test
@@ -29,54 +29,54 @@ public class KassapaateTest {
     //jos maksu riittävä: kassassa oleva rahamäärä kasvaa lounaan hinnalla ja vaihtorahan suuruus on oikea
     @Test
     public void kassaKasvaaOikeinEdullisenOstosta() {
-        int rahaa = kassa.kassassaRahaa();
+        double rahaa = kassa.kassassaRahaa();
         kassa.syoEdullisesti(500);
-        assertEquals(rahaa+240, kassa.kassassaRahaa());
+        assertEquals(Double.toString(rahaa+2.4), Double.toString(kassa.kassassaRahaa()));
     }
     
     @Test
     public void vahtorahaOikeinEdullisesta() {
-        assertEquals(500-240, kassa.syoEdullisesti(500));
+        assertEquals(Double.toString(5-2.4), Double.toString(kassa.syoEdullisesti(5)));
     }
     
     @Test
     public void kassaKasvaaOikeinMaukkaanOstosta() {
-        int rahaa = kassa.kassassaRahaa();
-        kassa.syoMaukkaasti(500);
-        assertEquals(rahaa+400, kassa.kassassaRahaa());
+        double rahaa = kassa.kassassaRahaa();
+        kassa.syoMaukkaasti(5);
+        assertEquals(Double.toString(rahaa+4), Double.toString(kassa.kassassaRahaa()));
     }
     
     @Test
     public void vahtorahaOikeinMaukkaasta() {
-        assertEquals(500-400, kassa.syoMaukkaasti(500));
+        assertEquals(Double.toString(5-4), Double.toString(kassa.syoMaukkaasti(5)));
     }
     
     //jos maksu on riittävä: myytyjen lounaiden määrä kasvaa
     @Test
     public void myydytEdullisetKasvaaOikein() {
-        kassa.syoEdullisesti(500);
+        kassa.syoEdullisesti(5);
         assertEquals(1, kassa.edullisiaLounaitaMyyty());
     }
     
     @Test
     public void myydytMaukkaatKasvaaOikein() {
-        kassa.syoMaukkaasti(500);
+        kassa.syoMaukkaasti(5);
         assertEquals(1, kassa.maukkaitaLounaitaMyyty());
     }
 
     //jos maksu ei ole riittävä: kassassa oleva rahamäärä ei muutu, kaikki rahat palautetaan vaihtorahana ja myytyjen lounaiden määrässä ei muutosta
     @Test
     public void riittamatonMaksuEiMuutaKassaa() {
-        int rahaa = kassa.kassassaRahaa();
+        double rahaa = kassa.kassassaRahaa();
         kassa.syoEdullisesti(1);
         kassa.syoMaukkaasti(2);
-        assertEquals(rahaa, kassa.kassassaRahaa());
+        assertEquals(Double.toString(rahaa), Double.toString(kassa.kassassaRahaa()));
     }
     
     @Test
     public void riittamatonMaksuPalauttaaKaikkiVaihtorahat() {
-        assertEquals(1, kassa.syoEdullisesti(1));
-        assertEquals(2, kassa.syoMaukkaasti(2));
+        assertEquals(Double.toString(1.0), Double.toString(kassa.syoEdullisesti(1)));
+        assertEquals(Double.toString(2.0), Double.toString(kassa.syoMaukkaasti(2)));
     }
     
     @Test
@@ -132,21 +132,21 @@ public class KassapaateTest {
     //kassassa oleva rahamäärä ei muutu kortilla ostettaessa
     @Test
     public void kassaEiMuutuKorttiostoissa() {
-        int rahaa = kassa.kassassaRahaa();
+        double rahaa = kassa.kassassaRahaa();
         Maksukortti kortti = new Maksukortti(8000);
         kassa.syoEdullisesti(kortti);
         kassa.syoMaukkaasti(kortti);
-        assertEquals(rahaa, kassa.kassassaRahaa());
+        assertEquals(Double.toString(rahaa), Double.toString(kassa.kassassaRahaa()));
     }
 
     //kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
     @Test
     public void korttiaLadattaessaKassaKasvaaOikein() {
-        int rahaa = kassa.kassassaRahaa();
+        double rahaa = kassa.kassassaRahaa();
         Maksukortti kortti = new Maksukortti(100);
         kassa.lataaRahaaKortille(kortti, -2);
         kassa.lataaRahaaKortille(kortti, 200);
-        assertEquals(rahaa+200, kassa.kassassaRahaa());
+        assertEquals(Double.toString(rahaa+200), Double.toString(kassa.kassassaRahaa()));
     }
 
 
