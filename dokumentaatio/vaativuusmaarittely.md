@@ -1,16 +1,16 @@
-#Vaativuusmäärittely
+# Vaativuusmäärittely
 
-##Sovelluksen tarkoitus
+## Sovelluksen tarkoitus
 
 Sovellus on laskin, jolla käyttäjä pystyy suorittamaan kaikki tavallisemmat laskut.
 
-##Käyttöliittymä
+## Käyttöliittymä
 
 Sovellus koostuu yhdestä näkymästä, laskimesta, jota käyttäjä voi käyttää vapaasti heti sovelluksen käynnistämisen jälkeen.
 
-##Suunnitellut toiminnallisuudet
+## Suunnitellut toiminnallisuudet
 
-###Perusversion tarjoama toiminnallisuus
+### Perusversion tarjoama toiminnallisuus
 
 - Käyttäjä voi laskea kaikki tavalliset laskut
 	- yhteen- ja vähennyslaskut
@@ -20,7 +20,7 @@ Sovellus koostuu yhdestä näkymästä, laskimesta, jota käyttäjä voi käytt�
 	- klikkaamalla sovelluksen nappeja
 - Käyttäjä voi pyyhkiä kirjoittamaansa tekstiä pois
 
-###Jatkokehitysideoita
+### Jatkokehitysideoita
 
 Perusversion jälkeen sovelluksen toiminnallisuutta täydennetään.
 
