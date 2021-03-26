@@ -14,4 +14,10 @@ Paikallisen ja etärepon epäsynkrooni: kokeillaan!
 
 ### Viikko 2
 
-[testikattavuus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.png)
+[Testikattavuus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.png)
+
+## Dokumentaatio
+
+[Työaikakirjanpito](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+[Vaativuusmäärittely](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
