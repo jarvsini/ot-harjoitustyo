@@ -34,3 +34,9 @@ Perusversion jälkeen sovelluksen toiminnallisuutta täydennetään.
 	- perusnäkymä
 	- kehittynyt näkymä
 	- finanssinäkymä
+
+## Toimintaympäristö
+
+Sovelluksen tulee toimia Linux-käyttöjärjestelmällä varustetuilla koneilla.
+
+
