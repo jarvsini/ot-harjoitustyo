@@ -16,6 +16,9 @@ Paikallisen ja etärepon epäsynkrooni: kokeillaan!
 
 [Testikattavuus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.png)
 
+### Viikko 3
+[Kuvat](https://github.com/jarvsini/ot-harjoitustyo/tree/master/laskarit/viikko3)
+
 ## Dokumentaatio
 
 [Työaikakirjanpito](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
