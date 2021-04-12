@@ -22,4 +22,13 @@ public class CalculatorController {
     public TextField getResult() {
         return result;
     }
+    
+    public long getNumber1() {
+        return number1;
+    }
+    
+    public long getNumber2() {
+        return number2;
+    }
+    
 }
