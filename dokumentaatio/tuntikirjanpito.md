@@ -7,3 +7,5 @@
 |          | 1 | lisää javafx:n kanssa leikkimistä
 | to 1.4.  |1.5| laskin aloitettu, projekti luotu, luokat luotu, koodia aloiteltu
 | su 11.4. | 4 | nappeja luotu, kokeiltu erilaisia asetteluja ja rakenteita, hahmoteltu ohjelman rakennetta
+| ma 12.4. | 5 | ohjelmaa edistetty, napeilla voi kirjoittaa, toimintaa jaettu luokkiin
+|          | 2 | testejä opiskeltu ja testaus aloitettu
