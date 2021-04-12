@@ -18,6 +18,8 @@ public class Calculator extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
+        CalculatorController controller = new CalculatorController();
+        
         BorderPane view = new BorderPane();
         
         GridPane buttons = new GridPane();
@@ -25,26 +27,66 @@ public class Calculator extends Application {
         int n=1;
         for (int x = 3; x >= 1; x--) {
             for (int y = 1; y <= 3; y++) {
-                buttons.add(new Button(""+n), y, x);
+                Button b = new Button(""+n);
+                b.setOnAction((event) -> {
+                    controller.processNumbers(event);
+                });
+                buttons.add(b, y, x);
                 n++;
             }
         }
         
-        buttons.add(new Button("."), 1, 4);
-        buttons.add(new Button("0"), 2, 4);
-        buttons.add(new Button("="), 3, 4);
+        Button dot = new Button(".");
+        dot.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(dot, 1, 4);
         
-        buttons.add(new Button("/"), 4, 1);
-        buttons.add(new Button("x"), 4, 2);
-        buttons.add(new Button("-"), 4, 3);
-        buttons.add(new Button("+"), 4, 4);
+        Button zero = new Button("0");
+        zero.setOnAction((event) -> {
+            controller.processNumbers(event);
+        }
+        );
+        buttons.add(zero, 2, 4);
+        
+        Button equal = new Button("=");
+        equal.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(equal, 3, 4);
+        
+        Button divide = new Button("/");
+        divide.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(divide, 4, 1);
+        
+        Button times = new Button("x");
+        times.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(times, 4, 2);
+        
+        Button minus = new Button("-");
+        minus.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(minus, 4, 3);
+        
+        Button plus = new Button("+");
+        plus.setOnAction((event) -> {
+            controller.processOperator(event);
+        });
+        buttons.add(plus, 4, 4);
         
         
         buttons.setHgap(10);
         buttons.setVgap(10);
             
         view.setCenter(buttons);
-        view.setTop(new TextField());
+        
+        TextField textfield = controller.getResult();
+        view.setTop(textfield);
 
         Scene scene = new Scene(view);
         stage.setTitle("Calculator");
