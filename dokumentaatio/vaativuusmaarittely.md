@@ -13,11 +13,11 @@ Sovellus koostuu yhdestä näkymästä, laskimesta, jota käyttäjä voi käytt�
 ### Perusversion tarjoama toiminnallisuus
 
 - Käyttäjä voi laskea kaikki tavalliset laskut
-	- yhteen- ja vähennyslaskut
-	- kerto- ja jakolaskut
+	- yhteen- ja vähennyslaskut :heavy_check_mark:
+	- kerto- ja jakolaskut :heavy_check_mark:
 - Käyttäjä voi käyttää laskinta
 	- näppäimistöltä kirjoittamalla sekä
-	- klikkaamalla sovelluksen nappeja
+	- klikkaamalla sovelluksen nappeja :heavy_check_mark:
 - Käyttäjä voi pyyhkiä kirjoittamaansa tekstiä pois
 
 ### Jatkokehitysideoita
