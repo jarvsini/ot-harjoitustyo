@@ -1,16 +1,12 @@
 
-package calculator;
+package calculator.ui;
 
+import calculator.CalculatorController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Calculator extends Application {
@@ -46,8 +42,8 @@ public class Calculator extends Application {
             
         view.setCenter(buttons);
         
-        TextField textfield = controller.getResult();
-        view.setTop(textfield);
+        controller.getResult();
+        view.setTop(controller.getResult());
 
         Scene scene = new Scene(view);
         stage.setTitle("Calculator");

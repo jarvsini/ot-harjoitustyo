@@ -1,6 +1,5 @@
 
 import calculator.CalculatorController;
-import javafx.scene.control.Button;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -11,7 +10,6 @@ import static org.junit.Assert.*;
 
 public class CalculatorControllerTest {
     
-    CalculatorController cc;
     
     public CalculatorControllerTest() {
     }
@@ -31,6 +29,8 @@ public class CalculatorControllerTest {
     @After
     public void tearDown() {
     }
+    
+
     
 
 }

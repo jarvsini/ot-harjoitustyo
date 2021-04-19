@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class ModelTest {
     
-    Model testmodel = new Model();
+    Model testmodel;
     
     public ModelTest() {
     }
@@ -26,6 +26,7 @@ public class ModelTest {
     
     @Before
     public void setUp() {
+        testmodel = new Model();
     }
     
     @After
@@ -33,8 +34,11 @@ public class ModelTest {
     }
     
     @Test
-    public void testi() {
+    public void calculateGivesRigtResult() {
         assertEquals(2, testmodel.calculate(1, 1, "+") );
+        assertEquals(1, testmodel.calculate(3, 2, "-") );
+        assertEquals(20, testmodel.calculate(10, 2, "x") );
+        assertEquals(10, testmodel.calculate(50, 5, "/") );
     }
 
 }
