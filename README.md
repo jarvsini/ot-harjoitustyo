@@ -9,6 +9,8 @@ Sovellus on laskin, jolla käyttäjä pystyy suorittamaan kaikki tavallisemmat l
 
 [Vaativuusmäärittely](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
 
+[Arkkitehtuurikuvaus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 ## Komentorivitoiminnot
 
 Ohjelma käynnistyy komennolla
