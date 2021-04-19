@@ -1,3 +1,4 @@
+package calculator;
 
 import calculator.CalculatorController;
 import org.junit.After;

@@ -1,4 +1,4 @@
-
+package calculator;
 
 import calculator.Model;
 import org.junit.After;
