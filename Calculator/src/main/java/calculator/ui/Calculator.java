@@ -5,6 +5,7 @@ import calculator.CalculatorController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -42,8 +43,8 @@ public class Calculator extends Application {
             
         view.setCenter(buttons);
         
-        controller.getResult();
-        view.setTop(controller.getResult());
+        Label result = controller.getResult();
+        view.setTop(result);
 
         Scene scene = new Scene(view);
         stage.setTitle("Calculator");
