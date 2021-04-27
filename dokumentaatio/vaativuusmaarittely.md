@@ -18,7 +18,7 @@ Sovellus koostuu yhdestä näkymästä, laskimesta, jota käyttäjä voi käytt�
 - Käyttäjä voi käyttää laskinta
 	- näppäimistöltä kirjoittamalla sekä
 	- klikkaamalla sovelluksen nappeja :heavy_check_mark:
-- Käyttäjä voi pyyhkiä kirjoittamaansa tekstiä pois
+- Käyttäjä voi pyyhkiä kirjoittamansa tekstin pois :heavy_check_mark:
 
 ### Jatkokehitysideoita
 

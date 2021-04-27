@@ -11,3 +11,6 @@
 |          | 2 | testejä opiskeltu ja testaus aloitettu
 | ma 19.4. | 4 | laskutoiminnot tehty, sovelluksen rakenne, pakkaukset yms. siistitty, testejä luotu ja kattavuutta korjattu
 |          | 1 | checkstyle, arkkitehtuurikuvaus (luokkakaavio)
+| ti 27.4. | 2 | pakkausrakenteen opettelua ja korjaus
+|          | 6 | toiminnallisuutta lisätty, uusia selkeämpi luokkia suunniteltu, opeteltu ja kokeiltu toiminnan jakamista nykyistä useampaan luokkaan
+| yht      | 34|
