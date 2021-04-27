@@ -1,5 +1,5 @@
 
-package calculator;
+package calculator.domain;
 
 
 public class Model {

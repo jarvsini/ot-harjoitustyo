@@ -1,4 +1,4 @@
-package calculator;
+package calculator.domain;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;

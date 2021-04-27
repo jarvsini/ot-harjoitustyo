@@ -1,6 +1,5 @@
-package calculator;
+package calculator.domain;
 
-import calculator.Model;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
