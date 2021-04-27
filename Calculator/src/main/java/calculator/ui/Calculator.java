@@ -43,6 +43,9 @@ public class Calculator extends Application {
             
         view.setCenter(buttons);
         
+        Button clearButton = createOperatorButton("clear");
+        view.setRight(clearButton);
+        
         Label result = controller.getResult();
         view.setTop(result);
 

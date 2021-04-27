@@ -20,7 +20,6 @@ public class CalculatorController {
     }
     
     
-    
     public void processNumbers(ActionEvent event) {
         if (start) {
             result.setText("");
@@ -32,6 +31,10 @@ public class CalculatorController {
     
     public void processOperator(ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
+        if(value.equals("clear")) {
+            result.setText("");
+            return;
+        }
         
         if(!value.equals("=")) {
             if(!operator.isEmpty()) {
@@ -51,6 +54,7 @@ public class CalculatorController {
             start = true;
         }
     }
+
         
         
     
