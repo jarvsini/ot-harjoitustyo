@@ -6,66 +6,111 @@ import javafx.scene.control.Label;
 
 public class CalculatorController {
     private Label result;
-    private long number1;
+    private Label output;
+    private Label history;
+    private Double number1;
     private String operator;
-    private boolean start;
+    private boolean readingNumbers;
     private Model model;
 
     public CalculatorController() {
-        result = new Label();
-        number1 = 0;
-        operator = "";
-        start = true;
+        result = new Label("");
+        output = new Label("");
+        history = new Label("");
+        readingNumbers = false;
         model = new Model();
+        number1 = null;
     }
     
     
     public void processNumbers(ActionEvent event) {
-        if (start) {
-            result.setText("");
-            start = false;
+        
+        
+        if(history.getText().equals("anna numero")) {
+            history.setText("");
         }
         String value = ((Button)event.getSource()).getText();
-        result.setText(result.getText() + value);
+        output.setText(output.getText() + value);
+        history.setText(history.getText() + value);
+        readingNumbers = true;
+                
     }
     
     public void processOperator(ActionEvent event) {
+        
         String value = ((Button)event.getSource()).getText();
+        
+        if (number1 != null && output.getText().equals("")) {
+            operator = value;
+            history.setText(number1 + value);
+            return;
+        }
+        
+        if(!readingNumbers) {
+            history.setText("anna numero");
+            return;
+        } 
+        
+        
+        
+        if(number1 == null) {
+            
+            number1 = Double.parseDouble(output.getText());
+            operator = value;
+            history.setText(number1 + value);
+            output.setText("");
+            readingNumbers = false;
+            return;
+        }
+        
+        
+            equal();
+             
 
         
-        if(!value.equals("=")) {
-            if(!operator.isEmpty()) {
-                return;
-            }      
-            operator = value;
-            number1 = Long.parseLong(result.getText());
-            result.setText("");
-        } else {
-            if(operator.isEmpty()) {
-                return;
-            }
-            long number2 = Long.parseLong(result.getText());
-            float output = model.calculate(number1, number2, operator);
-            result.setText(String.valueOf(output));
-            operator = "";
-            start = true;
-        }
     }
 
         
+    public void processClear(ActionEvent event) {
+        clear();
+    }
+    
+    public void clear() {
+        result.setText("");
+        output.setText("");
+        history.setText("");
+        operator = "";
+        number1 = null;
+        readingNumbers = false;
+    }
+    
+    public void processEqual() {
         
+    }
+    
+    public void equal() {
+        Double number2 = Double.parseDouble(output.getText());
+        String answer = String.valueOf(model.calculate(number1, number2, operator));
+        result.setText(answer);
+        output.setText("");
+        history.setText(history.getText() + "=" + answer + "  ");
+        number1=null;
+        operator="";
+        readingNumbers = false;
+    }
     
     
     public Label getResult() {
         return result;
     }
 
-    public void processClear(ActionEvent event) {
-        result.setText("");
-    }
 
     public Label getOutput() {
-        return new Label("moi");
+        return output;
+    }
+
+    public Label getHistory() {
+        return history;
     }
 
     

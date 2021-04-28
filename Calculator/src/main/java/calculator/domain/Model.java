@@ -4,9 +4,9 @@ package calculator.domain;
 
 public class Model {
     
-    long result = 0;
+    Double result = 0.0;
     
-    public long calculate(long number1, long number2, String operator) {
+    public Double calculate(Double number1, Double number2, String operator) {
         if(operator.equals("+")) {
             result = number1 + number2;
         }

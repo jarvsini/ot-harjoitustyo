@@ -57,7 +57,10 @@ public class Calculator extends Application {
         
         Label output = controller.getOutput();
         output.setStyle("-fx-font-size: 20px");
-        view.setCenter(output);
+        view.setLeft(output);
+        
+        Label history = controller.getHistory();
+        view.setRight(history);
 
         Scene scene = new Scene(view);
         stage.setTitle("Calculator");
