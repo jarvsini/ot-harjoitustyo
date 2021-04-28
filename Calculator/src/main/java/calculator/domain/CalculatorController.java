@@ -31,10 +31,7 @@ public class CalculatorController {
     
     public void processOperator(ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
-        if(value.equals("clear")) {
-            result.setText("");
-            return;
-        }
+
         
         if(!value.equals("=")) {
             if(!operator.isEmpty()) {
@@ -61,6 +58,14 @@ public class CalculatorController {
     
     public Label getResult() {
         return result;
+    }
+
+    public void processClear(ActionEvent event) {
+        result.setText("");
+    }
+
+    public Label getOutput() {
+        return new Label("moi");
     }
 
     
