@@ -40,6 +40,7 @@ public class CalculatorController {
         
         String value = ((Button)event.getSource()).getText();
         
+        
         if (number1 != null && output.getText().equals("")) {
             operator = value;
             history.setText(number1 + value);
@@ -54,7 +55,9 @@ public class CalculatorController {
         
         
         if(number1 == null) {
-            
+            if (value.equals("=")) {
+                return;
+            }
             number1 = Double.parseDouble(output.getText());
             operator = value;
             history.setText(number1 + value);
@@ -84,9 +87,6 @@ public class CalculatorController {
         readingNumbers = false;
     }
     
-    public void processEqual() {
-        
-    }
     
     public void equal() {
         Double number2 = Double.parseDouble(output.getText());
