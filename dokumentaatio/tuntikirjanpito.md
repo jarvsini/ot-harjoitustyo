@@ -15,5 +15,4 @@
 |          | 6 | toiminnallisuutta lisätty, uusia selkeämpi luokkia suunniteltu, opeteltu ja kokeiltu toiminnan jakamista nykyistä useampaan luokkaan
 | ke 28.4. | 2 | sovelluksen ulkonäkö, javafx
 |          | 6 | controller toimintaan
-
 | yht      |42.5|
