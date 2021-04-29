@@ -32,6 +32,7 @@
                 <configuration>
                     <excludes>
                         <exclude>calculator/ui/*</exclude>
+                        <exclude>**/*calculator/domain/CalculatorController.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
