@@ -4,6 +4,8 @@ package calculator.domain;
 
 public class Model {
     
+    //tänne komennot hashmappiin, oma luokka command jonka voi suorittaa ja periytyy sitten kaikille muille
+    
     Double result = 0.0;
     
     public Double calculate(Double number1, Double number2, String operator) {

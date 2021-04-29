@@ -4,14 +4,10 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 
 public class CalculatorControllerTest {
-    
-    CalculatorController testCc;
-    
+        
     
     public CalculatorControllerTest() {
     }
@@ -26,7 +22,6 @@ public class CalculatorControllerTest {
     
     @Before
     public void setUp() {
-        testCc = new CalculatorController();
     }
     
     @After

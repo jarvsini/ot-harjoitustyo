@@ -32,6 +32,7 @@ public class ModelTest {
     public void tearDown() {
     }
     
+    
     //@Test
     //public void calculateGivesRigtResult() {
     //    assertEquals(2, testmodel.calculate(1, 1, "+") );
