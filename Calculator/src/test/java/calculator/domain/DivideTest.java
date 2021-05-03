@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package calculator.domain;
 
 import org.junit.After;
@@ -7,12 +12,14 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-
-public class ModelTest {
+/**
+ *
+ * @author jarvsini
+ */
+public class DivideTest {
+    Divide d;
     
-    Model m;
-    
-    public ModelTest() {
+    public DivideTest() {
     }
     
     @BeforeClass
@@ -25,22 +32,16 @@ public class ModelTest {
     
     @Before
     public void setUp() {
-        m = new Model();
+       d = new Divide();
     }
     
     @After
     public void tearDown() {
     }
-    
-    
-    @Test
-    public void keyGivesRightOperator() {
-        assertEquals(new Sum().getClass(), m.get("+").getClass());        
-    }
-    
-    @Test
-    public void unknownKeyGivesUnknowType() {
-        assertEquals(new Unknow().getClass(), m.get("idk").getClass());
-    }
 
+    @Test
+    public void givesCorrectResult() {
+        double epsilon = 0.000001d;
+        assertEquals(4.0, d.run(10.0, 2.5), epsilon);
+    }
 }
