@@ -11,6 +11,14 @@ Sovellus on laskin, jolla käyttäjä pystyy suorittamaan kaikki tavallisemmat l
 
 [Arkkitehtuurikuvaus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Käyttöohje](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+## Releaset
+
+[Viikko 5](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko5)
+
+[Viikko 6](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko6)
+
 ## Komentorivitoiminnot
 
 Ohjelma käynnistyy komennolla
@@ -59,3 +67,13 @@ mvn javadoc:javadoc
 ```
 
 JavaDocia voi tarkastella avaamalla selaimella tiedosto *target/site/apidocs/index.html* 
+
+### Checkstyle
+
+Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
+
+```javascript
+mvn jxr:jxr checkstyle:checkstyle
+```
+
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto *target/site/checkstyle.html*
