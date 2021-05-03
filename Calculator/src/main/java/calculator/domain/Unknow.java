@@ -1,6 +1,8 @@
 package calculator.domain;
 
-
+/**
+ * Tuntemattomasta operaatiosta vastaava luokka
+ */
 public class Unknow extends Operator {
 
     public Unknow() {

@@ -33,7 +33,7 @@ Testikattavuus luodaan komennolla
 mvn jacoco:report
 ```
 
-Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jacoco/index.html
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto *target/site/jacoco/index.html*
 
 ### Suoritettavan jarin generointi
 
@@ -43,10 +43,19 @@ Komento
 mvn package
 ```
 
-generoi hakemistoon target suoritettavan jar-tiedoston Calculator-1.0-SNAPSHOT.jar .
+generoi hakemistoon target suoritettavan *jar-tiedoston Calculator-1.0-SNAPSHOT.jar* .
 Ohjelman voi nyt suorittaa komennolla
 
 ```javascript
 java -jar target/Calculator-1.0-SNAPSHOT.jar
 ```
 
+### JavaDoc
+
+JavaDoc generoidaan komennolla
+
+```javascript
+mvn javadoc:javadoc
+```
+
+JavaDocia voi tarkastella avaamalla selaimella tiedosto *target/site/apidocs/index.html* 

@@ -17,4 +17,5 @@
 |          | 6 | controller toimintaan
 | su 2.5.  | 10| siistimmän rakenteen opettelua, sovelluksen jakoa pienempiin luokkiin
 | ma 3.5.  |5.5| laskin käsittelee binäärilaskut, luokkakaavio laajentunut, modelin if-ketju ohitettu
-| yht      |57 |
+|          | 2 | testit kaikille laskeville luokille, jar
+| yht      |59 |

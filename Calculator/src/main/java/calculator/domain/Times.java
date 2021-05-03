@@ -1,5 +1,8 @@
 package calculator.domain;
 
+/**
+ * Suorittaa kertolaskun kahdella luvulla
+ */
 
 public class Times extends Operator {
 

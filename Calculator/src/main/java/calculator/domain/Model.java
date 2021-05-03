@@ -2,6 +2,9 @@ package calculator.domain;
 
 import java.util.HashMap;
 
+/**
+ * Laskimen mallista vastaava luokka, sisältää laskimen varsinaiset laskuoperaatiot
+ */
 
 public class Model {  
     private HashMap<String, Operator> operators;

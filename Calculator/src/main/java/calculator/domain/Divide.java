@@ -1,5 +1,9 @@
 package calculator.domain;
 
+/**
+ * Suorittaa jakolaskun kahdella luvulla
+ */
+
 public class Divide extends Operator {
 
     public Divide() {

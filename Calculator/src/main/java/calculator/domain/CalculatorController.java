@@ -4,6 +4,10 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+/**
+ * Sovelluslogiikasta vastaava luokka
+ */
+
 public class CalculatorController {
     private Label result;
     private Label output;
@@ -24,7 +28,11 @@ public class CalculatorController {
         includeDot = false;
     }
     
-    
+    /**
+    * Käsittelee numeronappulan käyttöliittymässä klikkaamisen
+    *
+    * @param   event   tapahtuma käyttöliittymästä
+    */
     public void processNumbers(ActionEvent event) {  
         if(history.getText().equals("anna numero")) {
             history.setText("");
@@ -41,6 +49,11 @@ public class CalculatorController {
         readingNumbers = true;                
     }
     
+    /**
+    * Käsittelee muun kuin numeronappulan käyttöliittymässä klikkaamisen
+    *
+    * @param   event   tapahtuma käyttöliittymästä
+    */
     public void processOperator(ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
         
@@ -68,11 +81,11 @@ public class CalculatorController {
         }
             equal();
     }
-        
-    public void processClear(ActionEvent event) {
-        clear();
-    }
     
+
+    /**
+    * Nollaa laskimen, asettaa tuloksen tyhjäksi
+    */
     public void clear() {
         result.setText("");
         output.setText("");
@@ -81,7 +94,10 @@ public class CalculatorController {
         number1 = null;
         readingNumbers = false;
     }
-        
+    
+    /**
+    * Käsittelee binäärioperaation loppuun ja antaa tuloksen
+    */    
     public void equal() {
         Double number2 = Double.parseDouble(output.getText());
         String answer = String.valueOf(model.get(operator).run(number1, number2));
@@ -105,6 +121,9 @@ public class CalculatorController {
         return history;
     }    
 
+    /**
+    * Käsittelee piste-komennon, kirjoittaa pisteen kun sallittu, muuten ei tee mitään
+    */
     private void processDot() {
         if(output.getText().equals("") || (includeDot)) {
             return;

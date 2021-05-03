@@ -39,7 +39,7 @@ public class Calculator extends Application {
               
         Button clear = new Button("AC");
         clear.setOnAction((event) -> {
-            controller.processClear(event);
+            controller.clear();
         });
         clear.setMinSize(50, 25);
         clear.setMaxSize(50, 25);
