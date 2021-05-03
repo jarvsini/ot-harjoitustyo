@@ -30,6 +30,9 @@ public class CalculatorController {
             history.setText("");
         }
         String value = ((Button)event.getSource()).getText();
+        if(value.equals(".") && output.getText().equals("")) {
+            return;
+        }
         output.setText(output.getText() + value);
         history.setText(history.getText() + value);
         readingNumbers = true;
@@ -112,6 +115,8 @@ public class CalculatorController {
     public Label getHistory() {
         return history;
     }
+
+
 
     
     

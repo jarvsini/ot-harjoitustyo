@@ -27,3 +27,26 @@ Testit suoritetaan komennolla
 mvn test
 ```
 
+Testikattavuus luodaan komennolla
+
+```javascript
+mvn jacoco:report
+```
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jacoco/index.html
+
+### Suoritettavan jarin generointi
+
+Komento
+
+```javascript
+mvn package
+```
+
+generoi hakemistoon target suoritettavan jar-tiedoston Calculator-1.0-SNAPSHOT.jar .
+Ohjelman voi nyt suorittaa komennolla
+
+```javascript
+java -jar target/Calculator-1.0-SNAPSHOT.jar
+```
+
