@@ -90,7 +90,7 @@ public class CalculatorController {
     
     public void equal() {
         Double number2 = Double.parseDouble(output.getText());
-        String answer = String.valueOf(model.calculate(number1, number2, operator));
+        String answer = String.valueOf(model.get(operator).run(number1, number2));
         result.setText(answer);
         output.setText("");
         history.setText(history.getText() + "=" + answer + "  ");

@@ -1,26 +1,27 @@
-
 package calculator.domain;
+
+import java.util.HashMap;
 
 
 public class Model {
     
-    //tänne komennot hashmappiin, oma luokka command jonka voi suorittaa ja periytyy sitten kaikille muille
     
-    Double result = 0.0;
-    
-    public Double calculate(Double number1, Double number2, String operator) {
-        if(operator.equals("+")) {
-            result = number1 + number2;
-        }
-        if(operator.equals("-")) {
-            result = number1 - number2;
-        }
-        if(operator.equals("x")) {
-            result = number1 * number2;
-        }
-        if(operator.equals("/")) {
-            result = number1 / number2;
-        }
-        return result;
+    private HashMap<String, Operator> operators;
+    private Operator unknown;
+
+    public Model() {
+        operators = new HashMap<String, Operator>();
+        operators.put("+", new Sum());
+        operators.put("-", new Minus());
+        operators.put("/", new Divide());
+        operators.put("x", new Times());
+        unknown = new Unknow();
     }
+
+
+    public Operator get(String operator) {
+        return operators.getOrDefault(operator, unknown);
+    }
+
+
 }

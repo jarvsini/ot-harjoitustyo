@@ -15,4 +15,6 @@
 |          | 6 | toiminnallisuutta lisätty, uusia selkeämpi luokkia suunniteltu, opeteltu ja kokeiltu toiminnan jakamista nykyistä useampaan luokkaan
 | ke 28.4. | 2 | sovelluksen ulkonäkö, javafx
 |          | 6 | controller toimintaan
-| yht      |42.5|
+| su 2.5.  | 10| siistimmän rakenteen opettelua, sovelluksen jakoa pienempiin luokkiin
+| ma 3.5.  |5.5| laskin käsittelee binäärilaskut, luokkakaavio laajentunut, modelin if-ketju ohitettu
+| yht      |57 |
