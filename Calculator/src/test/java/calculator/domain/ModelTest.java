@@ -7,7 +7,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-
 public class ModelTest {
     
     Model m;
@@ -30,8 +29,7 @@ public class ModelTest {
     
     @After
     public void tearDown() {
-    }
-    
+    }    
     
     @Test
     public void keyGivesRightOperator() {

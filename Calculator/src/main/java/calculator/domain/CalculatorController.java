@@ -12,6 +12,7 @@ public class CalculatorController {
     private String operator;
     private boolean readingNumbers;
     private Model model;
+    private boolean includeDot;
 
     public CalculatorController() {
         result = new Label("");
@@ -20,29 +21,28 @@ public class CalculatorController {
         readingNumbers = false;
         model = new Model();
         number1 = null;
+        includeDot = false;
     }
     
     
-    public void processNumbers(ActionEvent event) {
-        
-        
+    public void processNumbers(ActionEvent event) {  
         if(history.getText().equals("anna numero")) {
             history.setText("");
         }
         String value = ((Button)event.getSource()).getText();
-        if(value.equals(".") && output.getText().equals("")) {
+        
+        if (value.endsWith(".")) {
+            processDot();
             return;
         }
+        
         output.setText(output.getText() + value);
         history.setText(history.getText() + value);
-        readingNumbers = true;
-                
+        readingNumbers = true;                
     }
     
     public void processOperator(ActionEvent event) {
-        
         String value = ((Button)event.getSource()).getText();
-        
         
         if (number1 != null && output.getText().equals("")) {
             operator = value;
@@ -55,8 +55,6 @@ public class CalculatorController {
             return;
         } 
         
-        
-        
         if(number1 == null) {
             if (value.equals("=")) {
                 return;
@@ -68,14 +66,8 @@ public class CalculatorController {
             readingNumbers = false;
             return;
         }
-        
-        
             equal();
-             
-
-        
     }
-
         
     public void processClear(ActionEvent event) {
         clear();
@@ -89,8 +81,7 @@ public class CalculatorController {
         number1 = null;
         readingNumbers = false;
     }
-    
-    
+        
     public void equal() {
         Double number2 = Double.parseDouble(output.getText());
         String answer = String.valueOf(model.get(operator).run(number1, number2));
@@ -102,11 +93,9 @@ public class CalculatorController {
         readingNumbers = false;
     }
     
-    
     public Label getResult() {
         return result;
     }
-
 
     public Label getOutput() {
         return output;
@@ -114,10 +103,14 @@ public class CalculatorController {
 
     public Label getHistory() {
         return history;
+    }    
+
+    private void processDot() {
+        if(output.getText().equals("") || (includeDot)) {
+            return;
+        }
+        output.setText(output.getText() + ".");
+        history.setText(history.getText() + ".");
+        includeDot = true;
     }
-
-
-
-    
-    
 }

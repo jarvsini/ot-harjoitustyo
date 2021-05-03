@@ -3,9 +3,7 @@ package calculator.domain;
 import java.util.HashMap;
 
 
-public class Model {
-    
-    
+public class Model {  
     private HashMap<String, Operator> operators;
     private Operator unknown;
 
@@ -17,7 +15,6 @@ public class Model {
         operators.put("x", new Times());
         unknown = new Unknow();
     }
-
 
     public Operator get(String operator) {
         return operators.getOrDefault(operator, unknown);

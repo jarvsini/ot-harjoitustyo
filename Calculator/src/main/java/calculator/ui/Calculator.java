@@ -28,8 +28,6 @@ public class Calculator extends Application {
             }
         }
         
-
-        
         buttons.add(createNumberButton("."), 1, 5);
         buttons.add(createNumberButton("0"), 2, 5);
         buttons.add(createOperatorButton("="), 3, 5);
@@ -38,9 +36,7 @@ public class Calculator extends Application {
         buttons.add(createOperatorButton("x"), 4, 3);
         buttons.add(createOperatorButton("-"), 4, 4);
         buttons.add(createOperatorButton("+"), 4, 5);
-        
-        
-        
+              
         Button clear = new Button("AC");
         clear.setOnAction((event) -> {
             controller.processClear(event);
@@ -87,9 +83,7 @@ public class Calculator extends Application {
         });
         button.setMinSize(50, 50);
         return button; 
-    }
-    
-    
+    } 
     
     public static void main(String[] args) {
         launch(args);
