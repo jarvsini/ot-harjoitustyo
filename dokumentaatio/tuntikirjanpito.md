@@ -19,4 +19,5 @@
 | ma 3.5.  |5.5| laskin käsittelee binäärilaskut, luokkakaavio laajentunut, modelin if-ketju ohitettu
 |          | 2 | testit kaikille laskeville luokille, jar
 |          | 5 | viikon 6 palautus: checkstyle, javadoc, käyttöohjeet, arkkitehtuuri
+| to 6.5.  | 7 | rakenteen korjausta (model-view-controller)
 | yht      |64 |
