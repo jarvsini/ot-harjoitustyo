@@ -1,16 +1,30 @@
 package calculator.ui;
 
-import calculator.domain.CalculatorController;
+import calculator.domain.Model;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class Calculator extends Application {
     
+    @Override
+    public void start(Stage stage) throws Exception {
+        Model model = new Model();
+        
+        BasicView view = new BasicView();
+        BasicViewController controller = new BasicViewController(view, model);
+        
+        Scene scene = new Scene(view, 250, 350);
+        stage.setTitle("Calculator");
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+    /*
     private CalculatorController controller = new CalculatorController();
 
     @Override
@@ -58,7 +72,7 @@ public class Calculator extends Application {
         output.setStyle("-fx-font-size: 20px");
         view.setLeft(output);
         
-        Label history = controller.getHistory();
+        Label history = controller.getHistory();});
         view.setRight(history);
 
         Scene scene = new Scene(view);
@@ -88,4 +102,5 @@ public class Calculator extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+*/
 }
