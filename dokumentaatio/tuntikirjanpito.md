@@ -21,4 +21,5 @@
 |          | 5 | viikon 6 palautus: checkstyle, javadoc, käyttöohjeet, arkkitehtuuri
 | to 6.5.  | 7 | rakenteen korjausta (model-view-controller)
 | ma 10.5. | 4 | turhat riippuvuudet väistetty uudella arkkitehtuurilla, parannuksia controlleriin, ohjelman mahdollisia kaatumisia estetty tilanteissa, joissa käyttäjä painaa väärin nappeja
-| yht      |68 |
+|          | 4 | laskin tallentaa laskuhistoriaa tekstitiedostoon: uusi pakkaus ja luokka historialle
+| yht      |72 |

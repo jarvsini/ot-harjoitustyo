@@ -44,8 +44,8 @@ public class BasicViewController implements EventHandler {
         }
         if(value.equals("M")) {
             model.tulostahistoria();
-            return;
-        }
+            return; 
+       }
         if (isOperator(value)) {
             handleOperator(value);
             return;
