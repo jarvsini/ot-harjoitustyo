@@ -19,14 +19,12 @@ public class BasicViewController implements EventHandler {
     private Model model;
     private BasicView view;
     
-    private boolean readingNumber;
     private String operator;
 
     public BasicViewController(BasicView view, Model model) {
         this.model = model;
         this.view = view;
         this.view.setController(this);
-        this.readingNumber = false;
         operator = "";
     }
     
@@ -38,29 +36,23 @@ public class BasicViewController implements EventHandler {
             view.setOutput("");
             view.setResult("0");
             operator = "";
-            this.readingNumber = false;
             return;
         }
         if(value.equals("=")) {
             handleEqual();
             return;
         }
-        if (this.isOperator(value)) {
-            if(view.getOutput().equals("")) {
-                return;
-            }
-            if(!operator.equals("") && readingNumber) {
-                return;
-            }
-            operator = value;
-            view.setResult(view.getOutput());
-            view.setOutput(view.getResult() + value);
+        if(value.equals("M")) {
+            model.tulostahistoria();
             return;
         }
-        if(view.getOutput().length() > 8) {
+        if (isOperator(value)) {
+            handleOperator(value);
             return;
         }
-        readingNumber = true;
+        if(view.getOutput().length() > 11) {
+            return;
+        }
         view.setOutput(view.getOutput()+value);
         
     }
@@ -74,33 +66,49 @@ public class BasicViewController implements EventHandler {
             view.setResult(view.getOutput());
             view.setOutput("");
             return;
-        }
-        
+        }        
         String output = view.getOutput();
+        if(output.endsWith(operator)) {
+            return;
+        }
         String splitter = operator;
         if(operator.equals("+")) {
             splitter = "\\+";
         }
         String[] parts = output.split(splitter);
         int firstNumber = Integer.valueOf(parts[0]);
-        int secondNumber2 = Integer.valueOf(parts[1]);
-        view.setResult("" + model.calculateTwoNumbers(firstNumber, secondNumber2, operator));
+        int secondNumber = Integer.valueOf(parts[1]);
+
+        view.setResult("" + model.calculateTwoNumbers(firstNumber, secondNumber, operator));
         view.setOutput("");
         operator = "";
-        this.readingNumber = false;
     }
     
     private boolean isOperator(String txt) {
         if(txt.equals("+")) {
             return true;
         }
-        if(txt.equals("-")) {
+        if(txt.equals("--")) {
             return true;
         }
         if(txt.equals("x")) {
             return true;
         }
         return txt.equals("/");
+    }
+
+    private void handleOperator(String value) {
+        if(!operator.equals("")) {
+            return;
+        }
+        operator = value;
+        if(view.getOutput().equals("")) {
+            view.setOutput(view.getResult() + value);
+            return;
+        }
+        view.setResult(view.getOutput());
+        view.setOutput(view.getResult() + value);    
+   
     }
 
 

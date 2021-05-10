@@ -11,7 +11,7 @@ public class Minus extends Operator {
     
     @Override
     int run(int firstNumber, int secondNumber) {
-        return firstNumber - secondNumber;
+        return (firstNumber - secondNumber);
     }
 
 

@@ -1,5 +1,6 @@
 package calculator.domain;
 
+import calculator.data.History;
 import java.util.HashMap;
 
 /**
@@ -9,14 +10,17 @@ import java.util.HashMap;
 public class Model {
     private HashMap<String, Operator> operators;
     private Operator unknown;
+    
+    private History history;
 
     public Model() {
         operators = new HashMap<String, Operator>();
         operators.put("+", new Sum());
-        operators.put("-", new Minus());
+        operators.put("--", new Minus());
         operators.put("/", new Divide());
         operators.put("x", new Times());
         unknown = new Unknow();
+        history = new History();
     }
 
     public Operator get(String operator) {
@@ -24,9 +28,17 @@ public class Model {
     }
     
     public int calculateTwoNumbers(int firstNumber, int secondNumber, String operator) {
-        return get(operator).run(firstNumber, secondNumber);
+        int result = get(operator).run(firstNumber, secondNumber);
+        history.writeHistory( firstNumber + operator + secondNumber + "=" + result + ",");
+        return result;
     }
     
+    public void tulostahistoria() {
+        history.readHistory();
+        
+    }
+    
+
 
 
 }

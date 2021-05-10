@@ -64,7 +64,7 @@ public class BasicView extends BorderPane {
         
         buttons.add(createOperatorButton("/"), 4, 1);
         buttons.add(createOperatorButton("x"), 4, 2);
-        buttons.add(createOperatorButton("-"), 4, 3);
+        buttons.add(createOperatorButton("--"), 4, 3);
         buttons.add(createOperatorButton("+"), 4, 4);
         
         Button clear = new Button("C");
@@ -75,6 +75,12 @@ public class BasicView extends BorderPane {
         clear.setMaxSize(50, 50);
         buttonList.add(clear);
         buttons.add(clear, 1, 4);
+        
+        Button memory = new Button("M");
+        memory.setStyle("-fx-base: red;");
+        memory.setMinSize(50, 25);
+        buttonList.add(memory);
+        buttons.add(memory, 1, 5);
         
         buttons.setHgap(10);
         buttons.setVgap(10);
