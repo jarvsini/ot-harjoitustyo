@@ -57,6 +57,9 @@ public class BasicViewController implements EventHandler {
             view.setOutput(view.getResult() + value);
             return;
         }
+        if(view.getOutput().length() > 8) {
+            return;
+        }
         readingNumber = true;
         view.setOutput(view.getOutput()+value);
         
