@@ -20,4 +20,5 @@
 |          | 2 | testit kaikille laskeville luokille, jar
 |          | 5 | viikon 6 palautus: checkstyle, javadoc, käyttöohjeet, arkkitehtuuri
 | to 6.5.  | 7 | rakenteen korjausta (model-view-controller)
-| yht      |64 |
+| ma 10.5. | 4 | turhat riippuvuudet väistetty uudella arkkitehtuurilla, parannuksia controlleriin, ohjelman mahdollisia kaatumisia estetty tilanteissa, joissa käyttäjä painaa väärin nappeja
+| yht      |68 |
