@@ -6,7 +6,7 @@ import java.util.HashMap;
  * Laskimen mallista vastaava luokka, sisältää laskimen varsinaiset laskuoperaatiot
  */
 
-public class Model {  
+public class Model {
     private HashMap<String, Operator> operators;
     private Operator unknown;
 
@@ -22,6 +22,11 @@ public class Model {
     public Operator get(String operator) {
         return operators.getOrDefault(operator, unknown);
     }
+    
+    public int calculateTwoNumbers(int firstNumber, int secondNumber, String operator) {
+        return get(operator).run(firstNumber, secondNumber);
+    }
+    
 
 
 }

@@ -11,7 +11,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 
 /**
  *
@@ -68,7 +67,7 @@ public class BasicView extends BorderPane {
         buttons.add(createOperatorButton("-"), 4, 3);
         buttons.add(createOperatorButton("+"), 4, 4);
         
-        Button clear = new Button("AC");
+        Button clear = new Button("C");
    //     clear.setOnAction((event) -> {
      //       controller.processClear(event);
        // });
@@ -112,11 +111,11 @@ public class BasicView extends BorderPane {
         return output.getText();
     }
     
-    public void addToOutput(String txt) {
-        output.setText(output.getText() + txt);
+    public String getResult() {
+        return result.getText();
     }
     
-    public void resetOutput(String txt) {
+    public void setOutput(String txt) {
         output.setText(txt);
     }
     

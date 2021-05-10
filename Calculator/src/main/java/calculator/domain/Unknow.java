@@ -9,8 +9,10 @@ public class Unknow extends Operator {
     }
 
     @Override
-    Double run(Double num1, Double num2) {
-        return 0.0;
+    int run(int firstNumber, int secondNumber) {
+        return 0;
     }
+
+
     
 }
