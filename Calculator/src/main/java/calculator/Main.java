@@ -1,9 +1,9 @@
 package calculator;
 
-import calculator.ui.Calculator;
+import calculator.gui.CalculatorFX;
 
 public class Main {
     public static void main(String[] args) {
-        Calculator.main(args);
+        CalculatorFX.main(args);
     }
 }

@@ -4,9 +4,9 @@ package calculator.domain;
  * Suorittaa jakolaskun kahdella luvulla
  */
 
-public class Divide extends Operator {
+public class Division extends Operator {
 
-    public Divide() {
+    public Division() {
     }
 
     @Override

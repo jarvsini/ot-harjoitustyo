@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class SumTest {
-    Sum s;
+    Addition s;
     
     public SumTest() {
     }
@@ -23,7 +23,7 @@ public class SumTest {
     
     @Before
     public void setUp() {
-        s = new Sum();
+        s = new Addition();
     }
     
     @After
@@ -32,8 +32,7 @@ public class SumTest {
     
     @Test
     public void givesCorrectResult() {
-        double epsilon = 0.000001d;
-        assertEquals(6.0, s.run(2.0, 4.0), epsilon);
+        assertEquals(6, s.run(2, 4));
     }
 
 }

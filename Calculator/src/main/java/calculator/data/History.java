@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculator.data;
 
 import java.io.BufferedWriter;
@@ -11,8 +6,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
- *
- * @author jarvsini
+ * Laskimen muistista vastaava luokka
  */
 public class History {
     private String filename;
@@ -21,6 +15,9 @@ public class History {
         filename = "history.txt";
     }
     
+    /**
+     * Metodi lukee tekstitiedoston ja tulostaa sen
+     */
     public void readHistory() {
         try (Scanner tiedostonLukija = new Scanner(new File(filename))) {
             while (tiedostonLukija.hasNextLine()) {
@@ -31,6 +28,10 @@ public class History {
         }
     }
     
+    /**
+     * Metodi tallentaa tekstiä jo olemassa olevaan tekstitiedostoon
+     * @param txt teksti, joka halutaan tallentaa
+     */
     public void writeHistory(String txt) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             writer.append(txt);
@@ -41,6 +42,9 @@ public class History {
         
     }
     
+    /**
+     * Metodi tekee tekstitiedostosta tyhjän
+     */
     public void clearHistory() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             writer.append("");

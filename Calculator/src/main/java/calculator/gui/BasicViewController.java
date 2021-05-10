@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package calculator.ui;
+package calculator.gui;
 
 import calculator.domain.Model;
 import javafx.event.Event;
@@ -11,8 +6,7 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 /**
- *
- * @author jarvsini
+ * BasicViewin muutoksista ja tapahtumista vastaava luokka, käsittelee klikkaukset, toimii näkymän ja modelin välillä
  */
 public class BasicViewController implements EventHandler {
     
@@ -20,7 +14,12 @@ public class BasicViewController implements EventHandler {
     private BasicView view;
     
     private String operator;
-
+    
+    /**
+     * tuntee sekä näkymän että mallin, jotka eivät toisiaan
+     * @param view näkymä, jota käsitellään
+     * @param model malli, jossa sovelluslogiikka tapahtuu
+     */
     public BasicViewController(BasicView view, Model model) {
         this.model = model;
         this.view = view;
@@ -29,6 +28,10 @@ public class BasicViewController implements EventHandler {
     }
     
 
+    /**
+     * Metodi käsittelee nappien painallukset
+     * @param event käyttäjän napin klikkauksesta aiheutunut tapahtuma 
+     */
     @Override
     public void handle(Event event) {
         String value = ((Button)event.getSource()).getText();
@@ -57,7 +60,9 @@ public class BasicViewController implements EventHandler {
         
     }
     
-    
+    /**
+     * Metodi tarkistaa, onko kaikki tarvittava laskun suoritukseen ja lopulta kutsuu sovelluslogiikkaa eli modelia
+     */
     public void handleEqual() {
         if(view.getOutput().equals("")) {
             return;
@@ -83,7 +88,11 @@ public class BasicViewController implements EventHandler {
         view.setOutput("");
         operator = "";
     }
-    
+    /**
+     * Tarkistaa, onko kysytty operaatio sallittu laskutoiminta
+     * @param txt napin nimestä saatu operaatio
+     * @return palauttaa totuusarvon sen mukaan, onko
+     */
     private boolean isOperator(String txt) {
         if(txt.equals("+")) {
             return true;
@@ -97,6 +106,10 @@ public class BasicViewController implements EventHandler {
         return txt.equals("/");
     }
 
+    /**
+     * Metodi käsittelee operaation
+     * @param value näppäimen nimenä saatu operaatio
+     */
     private void handleOperator(String value) {
         if(!operator.equals("")) {
             return;

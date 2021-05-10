@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MinusTest {
-    Minus m;
+    Subtraction m;
     
     public MinusTest() {
     }
@@ -23,7 +23,7 @@ public class MinusTest {
     
     @Before
     public void setUp() {
-        m = new Minus();
+        m = new Subtraction();
     }
     
     @After
@@ -32,7 +32,6 @@ public class MinusTest {
 
     @Test
     public void givesCorrectResult() {
-        double epsilon = 0.000001d;
-        assertEquals(16.0, m.run(31.0, 15.0), epsilon);
+        assertEquals(2, m.run(6, 4));
     }
 }

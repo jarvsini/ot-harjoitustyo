@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UnknownTest {
-    Unknow u;
+    Unknown u;
     
     public UnknownTest() {
     }
@@ -23,7 +23,7 @@ public class UnknownTest {
     
     @Before
     public void setUp() {
-        u = new Unknow();
+        u = new Unknown();
     }
     
     @After
@@ -32,7 +32,6 @@ public class UnknownTest {
 
      @Test
      public void cantCalculate() {
-        double epsilon = 0.000001d;
-        assertEquals(0.0, u.run(1.0, 45.5), epsilon);
+         assertEquals(0, u.run(1,2));
      }
 }

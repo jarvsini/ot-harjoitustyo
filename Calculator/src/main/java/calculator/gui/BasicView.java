@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package calculator.ui;
+package calculator.gui;
 
 import java.util.ArrayList;
 import javafx.event.EventHandler;
@@ -13,9 +8,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 /**
- *
- * @author jarvsini
+ * Ulkonäöstä vastaava luokka, muodostaa näppäimet ja labelit
  */
+
 public class BasicView extends BorderPane {
     
    // private BasicViewController controller;

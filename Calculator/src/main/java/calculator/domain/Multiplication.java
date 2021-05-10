@@ -4,9 +4,9 @@ package calculator.domain;
  * Suorittaa kertolaskun kahdella luvulla
  */
 
-public class Times extends Operator {
+public class Multiplication extends Operator {
 
-    public Times() {
+    public Multiplication() {
     }
 
     @Override

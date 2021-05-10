@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TimesTest {
-    Times t;
+    Multiplication t;
     
     public TimesTest() {
     }
@@ -23,7 +23,7 @@ public class TimesTest {
     
     @Before
     public void setUp() {
-        t = new Times();
+        t = new Multiplication();
     }
     
     @After
@@ -32,8 +32,7 @@ public class TimesTest {
     
     @Test
     public void givesCorrectResult() {
-        double epsilon = 0.000001d;
-        assertEquals(6.0, t.run(2.0, 3.0), epsilon);
+        assertEquals(6, t.run(2, 3));
     }
 
 }

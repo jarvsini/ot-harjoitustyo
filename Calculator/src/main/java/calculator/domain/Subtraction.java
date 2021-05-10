@@ -4,9 +4,9 @@ package calculator.domain;
  * Suorittaa vähennyslaskun kahdella luvulla
  */
 
-public class Minus extends Operator {
+public class Subtraction extends Operator {
 
-    public Minus() {
+    public Subtraction() {
     }
     
     @Override

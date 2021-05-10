@@ -4,9 +4,9 @@ package calculator.domain;
  * Suorittaa yhteenlaskun kahdella luvulla
  */
 
-public class Sum extends Operator {    
+public class Addition extends Operator {    
 
-    public Sum() {
+    public Addition() {
     }
 
     @Override

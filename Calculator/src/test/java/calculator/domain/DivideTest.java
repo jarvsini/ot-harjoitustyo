@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 
 public class DivideTest {
-    Divide d;
+    Division d;
     
     public DivideTest() {
     }
@@ -25,7 +25,7 @@ public class DivideTest {
     
     @Before
     public void setUp() {
-       d = new Divide();
+       d = new Division();
     }
     
     @After
@@ -33,8 +33,7 @@ public class DivideTest {
     }
 
     @Test
-    public void givesCorrectResult() {
-        double epsilon = 0.000001d;
-        assertEquals(4.0, d.run(10.0, 2.5), epsilon);
+    public void givesCorrectResultWhenNoRemainder() {
+        assertEquals(5, d.run(10,2));
     }
 }

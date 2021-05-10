@@ -1,11 +1,11 @@
 package calculator.domain;
 
 /**
- * Tuntemattomasta operaatiosta vastaava luokka
+ * Tuntemattoman operaation käsittelevä luokka
  */
-public class Unknow extends Operator {
+public class Unknown extends Operator {
 
-    public Unknow() {
+    public Unknown() {
     }
 
     @Override
