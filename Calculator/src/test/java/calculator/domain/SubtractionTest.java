@@ -7,10 +7,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class SumTest {
-    Addition s;
+public class SubtractionTest {
+    Subtraction m;
     
-    public SumTest() {
+    public SubtractionTest() {
     }
     
     @BeforeClass
@@ -23,16 +23,15 @@ public class SumTest {
     
     @Before
     public void setUp() {
-        s = new Addition();
+        m = new Subtraction();
     }
     
     @After
     public void tearDown() {
     }
-    
+
     @Test
     public void givesCorrectResult() {
-        assertEquals(6, s.run(2, 4));
+        assertEquals(2, m.run(6, 4));
     }
-
 }

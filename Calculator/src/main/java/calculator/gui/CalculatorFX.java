@@ -6,7 +6,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Graafisen käyttöliittymän kokoava luokka
+ * Graafisen käyttöliittymän kokoava luokka, asettaa näkymän
+ * täällä valitaan näytettävä näkymä eli view (ja sen kontrolleri)
  */
 
 public class CalculatorFX extends Application {

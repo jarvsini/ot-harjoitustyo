@@ -13,7 +13,6 @@ import javafx.scene.layout.GridPane;
 
 public class BasicView extends BorderPane {
     
-   // private BasicViewController controller;
     private GridPane buttons;
     private Label result;
     private Label output;
@@ -21,7 +20,6 @@ public class BasicView extends BorderPane {
     private ArrayList<Button> buttonList;
 
     public BasicView() {
-        //controller = new BasicViewController();
         buttonList = new ArrayList<>();
        
         buttons = new GridPane();
@@ -30,10 +28,6 @@ public class BasicView extends BorderPane {
         for (int x = 3; x >= 1; x--) {
             for (int y = 1; y <= 3; y++) {
                 Button b = new Button(""+n);
-         //       b.setOnAction(pr);
-         //       b.setOnAction((event) -> {
-         //           controller.processNumber(event);
-         //       });
                 b.setMinSize(50, 50);
                 buttonList.add(b);
                 buttons.add(b, y, x);
@@ -42,17 +36,11 @@ public class BasicView extends BorderPane {
         }
         
         Button zero = new Button("0");
-   //     zero.setOnAction((event) -> {
-   //         controller.processNumber(event);
-   //     });
         zero.setMinSize(50, 50);
         buttonList.add(zero);
         buttons.add(zero, 2, 4);
         
         Button equal = new Button("=");
-    //    equal.setOnAction((event) -> {
-    //        controller.processEqual(event);
-    //    });
         equal.setMinSize(50, 50);
         buttonList.add(equal);        
         buttons.add(equal, 3, 4);
@@ -63,9 +51,6 @@ public class BasicView extends BorderPane {
         buttons.add(createOperatorButton("+"), 4, 4);
         
         Button clear = new Button("C");
-   //     clear.setOnAction((event) -> {
-     //       controller.processClear(event);
-       // });
         clear.setMinSize(50, 50);
         clear.setMaxSize(50, 50);
         buttonList.add(clear);
@@ -91,17 +76,21 @@ public class BasicView extends BorderPane {
         setLeft(output);
         
     }
-    
+    /**
+     * Metodi luo napin ja lisää sen nappilistalle
+     * @param title napin nimi eli operaation symboli
+     * @return palauttaa nappi-olion
+     */
     private Button createOperatorButton(String title) {
         Button b = new Button(title);
-    //    button.setOnAction((event) -> {
-    //        controller.processOperator(event);
-     //   });
         b.setMinSize(50, 50);
         buttonList.add(b);
         return b; 
     }
-    
+    /**
+     * Asettaa kontrollerin eli nappien painallusten kuuntelijan
+     * @param listener 
+     */
     public void setController(EventHandler listener){
         for (Button b : buttonList) {
             b.setOnAction(listener);

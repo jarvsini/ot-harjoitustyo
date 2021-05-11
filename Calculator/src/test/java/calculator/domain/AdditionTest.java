@@ -1,4 +1,3 @@
-
 package calculator.domain;
 
 import org.junit.After;
@@ -8,11 +7,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-
-public class DivideTest {
-    Division d;
+public class AdditionTest {
+    Addition s;
     
-    public DivideTest() {
+    public AdditionTest() {
     }
     
     @BeforeClass
@@ -25,15 +23,16 @@ public class DivideTest {
     
     @Before
     public void setUp() {
-       d = new Division();
+        s = new Addition();
     }
     
     @After
     public void tearDown() {
     }
-
+    
     @Test
-    public void givesCorrectResultWhenNoRemainder() {
-        assertEquals(5, d.run(10,2));
+    public void givesCorrectResult() {
+        assertEquals(6, s.run(2, 4));
     }
+
 }

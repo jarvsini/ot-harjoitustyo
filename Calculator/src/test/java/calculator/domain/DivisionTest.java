@@ -1,3 +1,4 @@
+
 package calculator.domain;
 
 import org.junit.After;
@@ -7,10 +8,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MinusTest {
-    Subtraction m;
+
+public class DivisionTest {
+    Division d;
     
-    public MinusTest() {
+    public DivisionTest() {
     }
     
     @BeforeClass
@@ -23,7 +25,7 @@ public class MinusTest {
     
     @Before
     public void setUp() {
-        m = new Subtraction();
+       d = new Division();
     }
     
     @After
@@ -31,7 +33,7 @@ public class MinusTest {
     }
 
     @Test
-    public void givesCorrectResult() {
-        assertEquals(2, m.run(6, 4));
+    public void givesCorrectResultWhenNoRemainder() {
+        assertEquals(5, d.run(10,2));
     }
 }

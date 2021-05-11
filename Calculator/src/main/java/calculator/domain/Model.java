@@ -4,7 +4,8 @@ import calculator.data.History;
 import java.util.HashMap;
 
 /**
- * Laskimen mallista vastaava luokka, jossa varsinainen laskenta tapahtuu, saa parametrit kontrollerilta, ei tunne käyttöliittymää
+ * Laskimen mallista vastaava luokka, jossa varsinainen laskenta tapahtuu,
+ * saa parametrit kontrollerilta, ei tunne käyttöliittymää
  */
 
 public class Model {

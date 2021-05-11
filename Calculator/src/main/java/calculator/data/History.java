@@ -16,7 +16,7 @@ public class History {
     }
     
     /**
-     * Metodi lukee tekstitiedoston ja tulostaa sen
+     * Metodi lukee tekstitiedoston history.txt ja tulostaa sen
      */
     public void readHistory() {
         try (Scanner tiedostonLukija = new Scanner(new File(filename))) {
@@ -24,7 +24,7 @@ public class History {
                 System.out.println(tiedostonLukija.nextLine());
             }
         } catch (Exception e) {
-            System.out.println("Tiedoston lukeminen epäonnstui.");
+            System.out.println("Tiedoston lukeminen epäonnistui.");
         }
     }
     
@@ -38,8 +38,7 @@ public class History {
             writer.close();
         } catch (Exception e) {
             System.out.println("Tiedostoon kirjoittaminen epäonnistui.");
-        }      
-        
+        }              
     }
     
     /**
@@ -52,6 +51,10 @@ public class History {
         } catch (Exception e) {
             System.out.println("Tiedoston tyhjentäminen epäonnistui.");
         }
+    }
+    
+    public void setFile(String name) {
+        filename = name;
     }
     
     

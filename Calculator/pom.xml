@@ -31,8 +31,7 @@
                 <version>0.8.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>calculator/ui/*</exclude>
-                        <exclude>**/*calculator/domain/CalculatorController.class</exclude>
+                        <exclude>calculator/gui/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>

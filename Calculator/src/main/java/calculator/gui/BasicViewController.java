@@ -6,7 +6,9 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 /**
- * BasicViewin muutoksista ja tapahtumista vastaava luokka, käsittelee klikkaukset, toimii näkymän ja modelin välillä
+ * BasicViewin muutoksista ja tapahtumista vastaava luokka,
+ * käsittelee klikkaukset,
+ * toimii näkymän ja modelin välillä
  */
 public class BasicViewController implements EventHandler {
     
@@ -64,15 +66,15 @@ public class BasicViewController implements EventHandler {
      * Metodi tarkistaa, onko kaikki tarvittava laskun suoritukseen ja lopulta kutsuu sovelluslogiikkaa eli modelia
      */
     public void handleEqual() {
-        if(view.getOutput().equals("")) {
+        String output = view.getOutput();
+        if(output.equals("")) {
             return;
         }
         if(operator.equals("")) {
-            view.setResult(view.getOutput());
+            view.setResult(output);
             view.setOutput("");
             return;
         }        
-        String output = view.getOutput();
         if(output.endsWith(operator)) {
             return;
         }
@@ -115,12 +117,14 @@ public class BasicViewController implements EventHandler {
             return;
         }
         operator = value;
-        if(view.getOutput().equals("")) {
-            view.setOutput(view.getResult() + value);
+        String output = view.getOutput();
+        String result = view.getResult();
+        if(output.equals("")) {
+            view.setOutput(result + value);
             return;
         }
-        view.setResult(view.getOutput());
-        view.setOutput(view.getResult() + value);    
+        view.setResult(output);
+        view.setOutput(output + value);    
    
     }
 
