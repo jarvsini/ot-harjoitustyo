@@ -22,4 +22,6 @@
 | to 6.5.  | 7 | rakenteen korjausta (model-view-controller)
 | ma 10.5. | 4 | turhat riippuvuudet väistetty uudella arkkitehtuurilla, parannuksia controlleriin, ohjelman mahdollisia kaatumisia estetty tilanteissa, joissa käyttäjä painaa väärin nappeja
 |          | 4 | laskin tallentaa laskuhistoriaa tekstitiedostoon: uusi pakkaus ja luokka historialle
-| yht      |72 |
+| ti 11.5. | 4 | pieniä parannuksia kuten luokkien ja metodien nimiin, testikattavuutta parannettu
+|          | 7 | arkkitehtuuridokumentti ja javadoc täydennetty
+| yht      |91 |
