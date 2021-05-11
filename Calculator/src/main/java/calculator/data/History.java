@@ -34,7 +34,7 @@ public class History {
      */
     public void writeHistory(String txt) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
-            writer.append(txt);
+            writer.append(";" + txt);
             writer.close();
         } catch (Exception e) {
             System.out.println("Tiedostoon kirjoittaminen epäonnistui.");

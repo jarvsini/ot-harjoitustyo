@@ -39,7 +39,7 @@ public class Model {
     */
     public int calculateTwoNumbers(int firstNumber, int secondNumber, String operator) {
         int result = getOperator(operator).run(firstNumber, secondNumber);
-        history.writeHistory(firstNumber + operator + secondNumber + "=" + result + ",");
+        history.writeHistory(firstNumber + operator + secondNumber + "=" + result);
         return result;
     }
     
