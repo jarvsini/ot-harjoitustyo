@@ -33,12 +33,12 @@ public class ModelTest {
     
     @Test
     public void keyGivesCorrectOperator() {
-        assertEquals(new Addition().getClass(), m.get("+").getClass());        
+        assertEquals(new Addition().getClass(), m.getOperator("+").getClass());        
     }
     
     @Test
     public void unknownKeyGivesUnknowType() {
-        assertEquals(new Unknown().getClass(), m.get("idk").getClass());
+        assertEquals(new Unknown().getClass(), m.getOperator("idk").getClass());
     }
     
     @Test

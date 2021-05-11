@@ -24,7 +24,7 @@ public class Model {
         history = new History();
     }
 
-    public Operator get(String operator) {
+    public Operator getOperator(String operator) {
         return operators.getOrDefault(operator, unknown);
     }
     
@@ -38,7 +38,7 @@ public class Model {
     * @return laskun tulos
     */
     public int calculateTwoNumbers(int firstNumber, int secondNumber, String operator) {
-        int result = get(operator).run(firstNumber, secondNumber);
+        int result = getOperator(operator).run(firstNumber, secondNumber);
         history.writeHistory(firstNumber + operator + secondNumber + "=" + result + ",");
         return result;
     }
