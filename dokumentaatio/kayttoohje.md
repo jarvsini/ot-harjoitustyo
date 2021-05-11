@@ -28,6 +28,9 @@ Suorita lasku klikkaamalla "="-nappia.
 
 ![ohje](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/ohje.png)
 
+Laskin antaa sinulle tuloksen. Voit aloittaa kokonaan uuden laskun klikkaamalla seuraavaksi jälleen numeroita.
+Tai voit jatkaa laskemista saadulla tuloksella klikkaamalla seuraavaksi jotakin napeista +, -, x, / .
+
 ## Laskimen nollaaminen
 
 Mikäli kirjoittaessa sattuu virhe, voi laskimen nollata klikkaamalla nappia "C". Nyt voit aloittaa alusta.
