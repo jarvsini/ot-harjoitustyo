@@ -25,4 +25,5 @@
 | ti 11.5. | 4 | pieniä parannuksia kuten luokkien ja metodien nimiin, testikattavuutta parannettu
 |          | 7 | arkkitehtuuridokumentti ja javadoc täydennetty
 | ke 12.5  | 5 | testausdokumentti, testaus
-| yht      |96 |
+| to 13.5. | 1 | testausta, korjaus
+| yht      |97 |
