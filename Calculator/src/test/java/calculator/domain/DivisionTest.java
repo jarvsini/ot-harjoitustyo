@@ -36,4 +36,9 @@ public class DivisionTest {
     public void givesCorrectResultWhenNoRemainder() {
         assertEquals(5, d.run(10,2));
     }
+    
+    @Test
+    public void divideZeroGivesZero() {
+        assertEquals(0, d.run(56, 0));
+    }
 }

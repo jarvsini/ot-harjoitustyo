@@ -17,6 +17,9 @@ public class Division extends Operator {
      */
     @Override
     int run(int firstNumber, int secondNumber) {
+        if(secondNumber == 0) {
+            return 0;
+        }
         return firstNumber / secondNumber;
     }   
 }
