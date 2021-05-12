@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [Calculator-1.0-SNAPSHOT.jar](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko6)
+Lataa tiedosto [Calculator-1.0-SNAPSHOT.jar](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Ohjelman käynnistäminen
 

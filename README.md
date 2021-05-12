@@ -24,6 +24,8 @@ Sovellus on suunniteltu ja toteutettu niin, että sitä on helppo laajentaa edel
 
 [Viikko 6](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko6)
 
+[Viikko 7](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko7)
+
 ## Komentorivitoiminnot
 
 ### Ohjelman käynnistys
