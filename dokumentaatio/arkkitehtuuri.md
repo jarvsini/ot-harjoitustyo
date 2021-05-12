@@ -96,4 +96,20 @@ kun käyttäjältä on saatu kaksi lukua.
 
 ![Sekvenssikaavio](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/sekvenssikaavio.png)
 
+## Jatkokehityksen kannalta
 
+Uusia yhden luvun käsitteleviä laskuoperaatioita voidaan luoda luomalla tällaisten operaatioiden
+napeille oma kontrolleri ja sovelluslogiikan puolelle Operator-luokan rinnalle uusi yhden luvun käsittelevä
+luokka, jonka nämä uudet operaatiot perivät.
+
+Tai käyttäjän kanssa kommunikointi voidaan siirtää sovelluslogiikan puolelle operaatioiden käsittelevien luokkien
+vastuulle. Jos sovelluslogiikalla on yhteys näkymään, voi se käsitellä komentoja ilman parametreina annettavia
+lukuja. Tässä kohtaa voidaan hyödyntää Command-suunnittelumallia. Kontrollerilta siirtyy vastuuta varsinaisen
+sovelluslogiikan puolelle. Tämä tyyli on suotavaa, jos sovellusta halutaan kehittää pitkälle. Näin sovellukseen 
+voidaan lisätä sujuvasti vaikka millaisia komentoja.
+
+Käyttöliittymän ja sovelluslogiikan välille voidaan luoda tarkkailija.
+MVC-mallia voidaan täydentää suunnittelumallilla Observer. Voidaan määritellä rajapinta, joka sisältää
+käyttöliittymän päivittämiseen tarkoitetun metodin, jota sovellusluokka sitten kutsuu.
+Käyttöliittymä toteuttaa rajapinnan eli toteuttaa päivittämiseen tarkoitetun metodin haluamallaan tavalla.
+Nyt sovellusluokalle riittää tuntea ainoastaan rajapinta, jonka metodia se voi kutsua.

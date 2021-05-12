@@ -43,14 +43,13 @@ Perusversion jälkeen sovelluksen toiminnallisuutta voidaan täydennetään.
 - Lisäksi voidaan kehittää uudenlaisia näkymiä, kuten
 	- kehittynyt näkymä
 	- finanssinäkymä
+	- graafinen näkymä
 
 Jakolasku toimii tällä hetkellä puutteellisesti ja laskee kokonaisluvuilla.
 Jakolaskun suorittavan luokan koodia parannetaan niin, että se pystyy käsittelemään myös jakojäännöksen.
 
-Laskuoperaation suorittavien luokkien vastuulle voidaan siirtää käyttäjän kanssa kommunikointi, jolloin luokalle
-ei tarvitse antaa parametreja suorittaakseen laskun. Nyt voidaan siirtää kontrollerilta vastuuta enemmän sovelluslogiikan
-puolelle, kun sovelluslogiikka osaa käsitellä operaation ilman lukuja. Näin sovelluksen toiminnan laajentaminen 
-yksinkertaistuu entisestään.
+Uusia operaatioita lisätään lisäämällä luokkia, jotka käsittelevät komentoja.
+Voidaan lisätä uusia näkymiä ja niille omat kontrollerit.
 
 ## Toimintaympäristö
 
