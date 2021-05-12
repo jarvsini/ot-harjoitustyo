@@ -12,16 +12,17 @@
 | ma 19.4. | 4 | laskutoiminnot tehty, sovelluksen rakenne, pakkaukset yms. siistitty, testejä luotu ja kattavuutta korjattu
 |          | 1 | checkstyle, arkkitehtuurikuvaus (luokkakaavio)
 | ti 27.4. | 2 | pakkausrakenteen opettelua ja korjaus
-|          | 6 | toiminnallisuutta lisätty, uusia selkeämpi luokkia suunniteltu, opeteltu ja kokeiltu toiminnan jakamista nykyistä useampaan luokkaan
+|          | 6 | toiminnallisuutta lisätty, uusia selkeämpi luokkia suunniteltu, opeteltu ja kokeiltu toiminnan jakamista nykyistä useampaan luokkaan, testaus
 | ke 28.4. | 2 | sovelluksen ulkonäkö, javafx
 |          | 6 | controller toimintaan
 | su 2.5.  | 10| siistimmän rakenteen opettelua, sovelluksen jakoa pienempiin luokkiin
 | ma 3.5.  |5.5| laskin käsittelee binäärilaskut, luokkakaavio laajentunut, modelin if-ketju ohitettu
-|          | 2 | testit kaikille laskeville luokille, jar
+|          | 2 | testit kaikille laskeville luokille, jar, testaus
 |          | 5 | viikon 6 palautus: checkstyle, javadoc, käyttöohjeet, arkkitehtuuri
 | to 6.5.  | 7 | rakenteen korjausta (model-view-controller)
 | ma 10.5. | 4 | turhat riippuvuudet väistetty uudella arkkitehtuurilla, parannuksia controlleriin, ohjelman mahdollisia kaatumisia estetty tilanteissa, joissa käyttäjä painaa väärin nappeja
 |          | 4 | laskin tallentaa laskuhistoriaa tekstitiedostoon: uusi pakkaus ja luokka historialle
 | ti 11.5. | 4 | pieniä parannuksia kuten luokkien ja metodien nimiin, testikattavuutta parannettu
 |          | 7 | arkkitehtuuridokumentti ja javadoc täydennetty
-| yht      |91 |
+| ke 12.5  | 5 | testausdokumentti, testaus
+| yht      |96 |

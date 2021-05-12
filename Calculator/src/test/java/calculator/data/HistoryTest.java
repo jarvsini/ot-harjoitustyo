@@ -44,7 +44,7 @@ public class HistoryTest {
         h.writeHistory("hello");
         System.setOut(new PrintStream(outputStreamCaptor));
         h.readHistory();
-        Assert.assertEquals("hello", outputStreamCaptor.toString()
+        Assert.assertEquals(";hello", outputStreamCaptor.toString()
       .trim());
     }
     

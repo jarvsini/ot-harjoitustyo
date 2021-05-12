@@ -41,18 +41,6 @@ public class History {
         }              
     }
     
-    /**
-     * Metodi tekee tekstitiedostosta tyhjän
-     */
-    public void clearHistory() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            writer.append("");
-            writer.close();
-        } catch (Exception e) {
-            System.out.println("Tiedoston tyhjentäminen epäonnistui.");
-        }
-    }
-    
     public void setFile(String name) {
         filename = name;
     }

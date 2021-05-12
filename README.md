@@ -1,17 +1,20 @@
-## Ohjelmistotekniikka, harjoitustyö
 # Calculator
 
 Sovellus on laskin, jolla käyttäjä pystyy suorittamaan kaikki tavallisemmat laskut.
+Sovellus ei vaadi tunnistautumista ja kuka tahansa voi ohjelman käynnistyttyä käyttää laskinta.
+
+Sovellus on suunniteltu ja toteutettu niin, että sitä on helppo laajentaa edelleen.
 
 ## Dokumentaatio
 
-[Työaikakirjanpito](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Käyttöohje](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Arkkitehtuurikuvaus](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[Käyttöohje](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+[Työaikakirjanpito](https://github.com/jarvsini/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
 
 ## Releaset
 
@@ -20,6 +23,8 @@ Sovellus on laskin, jolla käyttäjä pystyy suorittamaan kaikki tavallisemmat l
 [Viikko 6](https://github.com/jarvsini/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Komentorivitoiminnot
+
+### Ohjelman käynnistys
 
 Ohjelma käynnistyy komennolla
 
@@ -35,7 +40,7 @@ Testit suoritetaan komennolla
 mvn test
 ```
 
-Testikattavuus luodaan komennolla
+Testikattavuusraportti luodaan komennolla
 
 ```javascript
 mvn jacoco:report
@@ -51,7 +56,7 @@ Komento
 mvn package
 ```
 
-generoi hakemistoon target suoritettavan *jar-tiedoston Calculator-1.0-SNAPSHOT.jar* .
+generoi hakemistoon target suoritettavan jar-tiedoston *Calculator-1.0-SNAPSHOT.jar* .
 Ohjelman voi nyt suorittaa komennolla
 
 ```javascript
@@ -77,3 +82,6 @@ mvn jxr:jxr checkstyle:checkstyle
 ```
 
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto *target/site/checkstyle.html*
+
+Huomaa, että komennot tulee suorittaa samassa hakemistossa kuin missä projekti sijaitsee.
+Navigoi itsesi siis hakemistoon */Calculator*.
